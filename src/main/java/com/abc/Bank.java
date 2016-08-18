@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Bank {
     private List<Customer> customers;
+	//private List<Employees> employess; Would require an Employee class to view the report and total interest added.
 
     public Bank() {
         customers = new ArrayList<Customer>();

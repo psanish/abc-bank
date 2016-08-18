@@ -11,7 +11,13 @@ public class Transaction {
     public Transaction(double amount) {
         this.amount = amount;
         this.transactionDate = DateProvider.getInstance().now();
-		//Added this to check the git branch
+		
+    }
+	
+	public Transaction(double amount,Date transactionDate) {
+        this.amount = amount;
+        this.transactionDate = DateProvider.getInstance().now();
+		
     }
 
 }

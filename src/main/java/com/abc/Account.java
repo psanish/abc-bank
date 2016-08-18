@@ -1,4 +1,4 @@
-package com.abc;
+in com.abc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,7 @@ public class Account {
 
     private final int accountType;
     public List<Transaction> transactions;
+	public int account_balance;
 
     public Account(int accountType) {
         this.accountType = accountType;
