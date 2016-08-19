@@ -1,4 +1,4 @@
-in com.abc;
+package com.abc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,5 +70,22 @@ public void withdraw(double amount) {
     public int getAccountType() {
         return accountType;
     }
-
+    
+    public  int intraAccountTransfer(int Amount, Account target, Account source){
+    	if (Amount<=0){
+    		throw new IllegalArgumentException("Amount should be more than zero");
+    	}
+    		else{
+    			
+    			if(source.account_balance>Amount){
+    				source.withdraw(Amount);
+    				target.deposit(Amount);
+    			}
+    			
+    			
+    		}
+    	return (int) (target.sumTransactions());
+    	}
+    	
+    
 }

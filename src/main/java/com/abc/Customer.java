@@ -72,7 +72,14 @@ public class Customer {
         return s;
     }
 
+    public Account getAccount(int index){
+    	
+    	return accounts.get(index);
+    }
+    
     private String toDollars(double d){
         return String.format("$%,.2f", abs(d));
     }
+    
+    
 }
